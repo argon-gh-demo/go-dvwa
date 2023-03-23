@@ -6,6 +6,7 @@ on:
       - test-sbom
       - main
       
+      
 jobs:
   aqua:
     name: Aqua scanner
