@@ -23,4 +23,3 @@ require (
 	gopkg.in/check.v1 v1.0.0-20200227125254-8fa46927fb4f // indirect
 	gopkg.in/ini.v1 v1.56.0 // indirect
 )
-
