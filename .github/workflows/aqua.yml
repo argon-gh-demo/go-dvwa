@@ -1,0 +1,16 @@
+name: Aqua
+on: 
+  push:
+    branches:
+      - main
+jobs:
+  aqua-scan-build:
+    uses: argon-gh-demo/github-workflows/.github/workflows/aquasec-scan.yml@main
+    secrets: 
+      AQUA_KEY: ${{ secrets.AQUA_KEY }}
+      AQUA_SECRET: ${{ secrets.AQUA_SECRET }}
+      GH_TOKEN: ${{ secrets.github_token }}
+    with:      
+      AQUA_URL: "https://api.supply-chain.cloud.aquasec.com"
+      CSPM_URL: "https://api.cloudsploit.com"
+    
