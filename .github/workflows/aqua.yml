@@ -9,7 +9,7 @@ jobs:
     secrets: 
       AQUA_KEY: ${{ secrets.AQUA_KEY }}
       AQUA_SECRET: ${{ secrets.AQUA_SECRET }}
-      GH_TOKEN: ${{ secrets.github_token }}
+      #GH_TOKEN: ${{ secrets.github_token }}
     with:      
       AQUA_URL: "https://api.supply-chain.cloud.aquasec.com"
       CSPM_URL: "https://api.cloudsploit.com"
